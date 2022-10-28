@@ -9,3 +9,10 @@ export interface CustomerCardModel {
     value: string;
     isIncrease: boolean;
 }
+export interface DefaultCardModel {
+    percentage: string | null;
+    heading: string;
+    value: string;
+    isIncrease: boolean;
+    image: string;
+}

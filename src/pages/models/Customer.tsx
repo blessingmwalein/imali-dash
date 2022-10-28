@@ -19,6 +19,7 @@ export interface CustomerModel {
   loadDetails: LoadDetails;
 }
 
+
 export enum Status {
   Successfull = "Successfull",
   Failed = "Failed",
@@ -104,7 +105,7 @@ export const customers: CustomerModel[] = [
         date: "21 Jul, 2022",
         amount: "NGN 34,600",
         status: Status.Overdue,
-        period: "/6",
+        period: "2/6",
       },
       {
         id: 2,

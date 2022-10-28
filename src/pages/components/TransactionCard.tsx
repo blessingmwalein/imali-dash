@@ -1,4 +1,6 @@
-function TransactionCard(props:any) {
+import StatusCard from "./StatusCard";
+
+function TransactionCard(props: any) {
   return (
     <div className="flex flex-row items-center justify-between mt-3">
       <svg
@@ -11,7 +13,7 @@ function TransactionCard(props:any) {
         <circle cx="21" cy="21" r="21" fill="#014342" />
         <mask
           id="mask0_9_8605"
-          style={{maskType:"alpha"}}
+          style={{ maskType: "alpha" }}
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
@@ -50,34 +52,23 @@ function TransactionCard(props:any) {
             fontWeight: 400,
           }}
         >
-         {props.data.date}
+          {props.data.date}
         </p>
       </div>
-      <span
-        style={{ backgroundColor: "#ECFDF3", width: "79px" }}
-        className=" flex-row px-4 py-2 rounded-full font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease"
-      >
-        <p
-          className="text-md font-medium "
-          style={{
-            color: "#027A48",
-            fontSize: "12px",
-            fontWeight: 500,
-          }}
-        >
-          {props.data.status}
-        </p>
-      </span>
+      <StatusCard key={props.data.id} status={props.data.status} />
 
       <p
         className="text-md font-medium justify-end ml-20"
         style={{ color: "#101828", fontSize: "14px", right: "0" }}
       >
-        {props.data.transaction_id}
+        {props.data.amount}
       </p>
     </div>
   );
 }
 
-
 export default TransactionCard;
+
+
+
+

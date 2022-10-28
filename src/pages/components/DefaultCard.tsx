@@ -1,8 +1,8 @@
 function DefaultCard(props : any) {
   return (
     <div
-      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mr-8"
-      style={{ width: "327px" }}
+      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full mr-3 mb-3"
+
     >
       <div className="flex flex-row justify-between">
         <img
@@ -56,7 +56,7 @@ function DefaultCard(props : any) {
         >
           {props.data.value}
         </p>
-        {props.data.perce ? (
+        {props.data.percentage ? (
           <span
             style={{
               backgroundColor: "#ECFDF3",
@@ -87,7 +87,7 @@ function DefaultCard(props : any) {
                 </svg>
               </div>
               <span className="ml-1 mr-1" style={{ color: "#027A48" }}>
-                {props.data.perce} %
+                {props.data.percentage} %
               </span>
             </p>
           </span>

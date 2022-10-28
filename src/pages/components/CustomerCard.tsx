@@ -1,8 +1,8 @@
 function CustomerCard(props : any) {
   return (
     <div
-      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mr-8"
-      style={{ width: "327px" }}
+      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full mr-3 mb-3"
+      
     >
       <p
         className="text-md font-medium "

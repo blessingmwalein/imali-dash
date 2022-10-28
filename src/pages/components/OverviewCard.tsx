@@ -1,8 +1,7 @@
 function OverviewCard(props : any) {
   return (
     <div
-      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mr-8"
-      style={{ width: "327px" }}
+      className="block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full mr-3 mb-3"
     >
       <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
         <img
